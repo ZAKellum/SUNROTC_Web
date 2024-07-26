@@ -1,0 +1,723 @@
+<!--Facelift of this was done by ENS Kellum, May 2024-->
+
+<!-- Added new logog below, tried making it a vector file, but not able to upload vector files-->
+
+<!--Logo text coloring needs to be fixed, The southern Blue is not matching.-->
+
+<!--Script for Icons-->
+<script src="https://kit.fontawesome.com/07b865d1ad.js" crossorigin="anonymous"></script>
+
+<!--Style Sheet-->
+
+<style>
+  .container2 {
+    width: 100%;
+    max-width: auto;
+    background: rgb(87, 182, 231);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .container3 {
+    width: 100%;
+    max-width: auto;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .container2 h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .logo-container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .logo-container2 img {
+    width: 200px;  /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: contain;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+
+  .logo-container2 img:hover {
+    transform: scale(1.05);
+  }
+
+  .logo-container2 a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .body2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Optional max-width to control card size */
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-text {
+    position: relative;
+    background-color: rgb(87, 182, 231);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .card-text::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-color: rgb(87, 182, 231);
+  }
+
+  .text-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .text-content h2 {
+    margin: 0 0 10px;
+  }
+
+  .text-content p {
+    margin: 0;
+  }
+
+  .body3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex start;
+    height: auto;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .section2 {
+    display: flex; /* Add this line */
+    flex-direction: column; /* Add this line */
+    align-items: center; /* Add this line */
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    min-width: 200px;
+  }
+  .section2 h2 {
+    margin: 0;
+    color: #333;
+  }
+
+  .section2 p {
+    margin: 10px 0 0;
+    color: #666;
+  }
+
+  .divider2 {
+    width: 1.25px;
+    height: 500px; /* Change this number to the proper amount based off of text length */
+    background: #333;
+    margin: 0 20px;
+  }
+
+  .icon {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width: 200px;
+  }
+
+  .icon img {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Set the desired height */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  .social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Button */
+  .button {
+    border: none;
+    color: white;
+    padding: 10px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .button1{ 
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(255, 206, 52);
+    
+  }
+  .button1:hover{
+    background-color: rgb(234, 234, 234);
+    color: rgb(92, 193, 255);
+  }
+
+  .button2{ 
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(92, 193, 255);
+    display: block;
+    margin: 20px auto;
+  }
+  .button2:hover{
+    background-color: rgb(234, 234, 234);
+    color: rgb(92, 193, 255);
+  }
+
+  .button3{ 
+    background-color: rgb(251, 251, 251);
+    color: rgb(112, 168, 203);
+    display: block;
+    margin: 20px auto;
+  }
+  .button3:hover{
+    background-color: rgb(222, 222, 222);
+    color: rgb(92, 193, 255);
+  }
+
+
+  /* Font for WebPage */
+  .raleway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+  }
+
+  /* Rounded border */
+  .divider3 {
+    width: 100%;
+    height: 2px;
+    background: #7f7f7f;
+    margin: 0 0px;
+  }
+
+  .container5 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Stretch the cards to equal height */
+    gap: 30px; /* Space between the cards */
+    flex-wrap: wrap; /* Wrap cards if there's not enough space */
+    width: 100%;
+    padding: 40px; /* Reduced padding */
+    box-sizing: border-box;
+  }
+
+  .card5 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40%; /* Width of the card */
+    background-color: white;
+    flex: 1 1 auto; /* Allow the cards to grow and shrink */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-content5 {
+    padding: 20px; /* Increased padding for better spacing */
+    text-align: left; /* Align text to the left */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space between elements */
+  }
+
+  .card-content5 h2 {
+    text-align: center; /* Center the header */
+    margin-bottom: 16px; /* Margin to separate header from the content */
+  }
+
+  .card-content5 p {
+    margin: 8px 0; /* Margin to separate paragraphs from each other */
+  }
+
+  .card-content5 ul {
+    padding-left: 20px; /* Indent the list for better readability */
+    margin: 16px 0; /* Margin to separate the list from other elements */
+  }
+
+  .centering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .card5 {
+      width: 100%; /* Stack cards vertically on small screens */
+    }
+  }
+
+  .mission img, .vision img {
+    max-width: 300px; /* Restricting the maximum width */
+    width: 100%; /* Making the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+
+  .link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    padding: 20px;
+  }
+
+  .link-container a {
+      text-decoration: none; /* Remove underline from links */
+  }
+  .fade-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, white, transparent 50%);
+    color: black;
+    text-align: center;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px;
+  }
+}
+
+p2 {
+  font-size: 18px;
+}
+</style>
+
+<!--
+*******************
+
+       HTML
+
+*******************
+-->
+
+
+<!-- New Photo section -->
+
+<body>
+  <h2 style="text-align: center;"><span style="text-align: center;">About Us</span></h2>
+
+  <div class="slideshow-container">
+  
+    <div class="mySlides">
+      <img src="/assets/subr/NavyROTC/Batallion_Photo_SP24.jpg" style="width:100%">
+      <div class="text">LSU President's Day 2024</div>
+    </div>
+
+  <!--
+    <div class="mySlides">
+      <img src="/assets/subr/NavyROTC/IMG_9800.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  -->
+  
+    <div class="mySlides">
+      <img src="/assets/subr/NavyROTC/IMG_8531.jpg" style="width:100%">
+      <div class="text">NSO CO inspection</div>
+    </div>
+  
+    <div class="mySlides">
+      <img src="/assets/subr/NavyROTC/IMG_9094.JPG" style="width:100%">
+      <div class="text">LSU's Veterans Day Game</div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+  
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+  
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+  
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+  <br>
+  <p2 style="text-align: justify;"><span style="text-align: center;">The<b> Naval Reserve Officers Training Corps</b> (NROTC) Unit at Southern University, established in 1971, offers a unique opportunity for dedicated students from Southern University, Louisiana State University, Southeastern Louisiana University, and Baton Rouge Community College. We are committed to preparing our students mentally, morally, and physically for commissioning as officers in the United States Navy or Marine Corps, fostering leaders who are ready to serve.</span></p2>
+</body>
+<br>
+<br>
+<br>
+<!-- Logos, Unit, Navy & Marine-->
+<p style="text-align: center;"><img src="/assets/subr/NavyROTC/NROTC_Landing_Logos_cropped.png" /></p>
+<br>
+<br>
+
+
+<!-- Old Photo section-->
+
+<!--
+<body>
+  <div class="card">
+    <div class="card-image">
+      <img src="/assets/subr/NavyROTC/Batallion_Photo_SP24.jpg" alt="batallion photo">
+    </div>
+    <div class="card-text">
+      <div class="text-content">
+        <h2 style="color: black">LSU President's Day Parade 2024</h2>
+      </div>
+    </div>
+  </div>
+</body>
+-->
+
+
+<br>
+<br>
+<!--TODO create a vision and mission statement-->
+<div class="body3">
+  <div class="section2">
+      <div class="icon">
+        <img src="/assets/subr/NavyROTC/VisionIcon.png" alt="Vision Icon"><!--Replace with your icon -->
+      </div>  
+      <h2>Vision</h2>
+      <p>Our vision is to cultivate leaders of character who are committed to excellence, integrity, and service. We strive to prepare our cadets for the challenges of the future, fostering a spirit of teamwork and resilience. By instilling core Navy values, we aim to develop professionals ready to lead in the Navy and beyond.</p>
+    </div>
+  <div class="divider2"></div>
+    <div class="section2">
+      <div class="icon">
+        <img src="/assets/subr/NavyROTC/MissionIcon.png" alt="Mission Icon">  <!--Replace with your icon-->
+      </div> 
+      <h2>Mission</h2>
+      <p>Our mission is to develop midshipmen mentally, morally, and physically, and to imbue them with the highest ideals of duty, honor, and loyalty. We aim to commission college graduates as naval officers who possess a basic professional background, are motivated toward careers in the naval service, and have a potential for future development in mind and character. Through rigorous training and education, we prepare our cadets to lead and serve in the United States Navy and Marine Corps.</p>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<!-- How to Joing the program -->
+<body class="body2">
+  <div class="container3">
+      <h2>Joining the program</h2>
+      <div class="container5">
+        <div class="card5">
+          <div class="card-content5">
+            <h2><b>College <br> Programmer</b></h2> 
+            <p>College Programmers are students who join the Navy ROTC unit without an initial scholarship but are dedicated to pursuing a commission as a naval officer. These students participate fully in the ROTC program, receiving training, education, and mentorship while demonstrating their commitment and potential. They have the opportunity to compete for a scholarship during their time in the program based on their performance and academic achievements. College Programmers are integral members of the unit, contributing to the team and gaining valuable leadership experience.</p> 
+            <ul>
+              <li>Scholarship Opportunities</li>
+              <li>Hands-On Experience</li>
+              <li>Leadership Experience</li>
+            </ul>
+            <a href="https://www.subr.edu/page/scholarship"><!-- Input correct link to website -->
+              <button class="button button2">More Info</button>
+            </a>
+          </div>
+        </div>
+        <div class="card5">
+          <div class="card-content5">
+            <h2><b>National Scholarship</b></h2> 
+            <p>Scholarship Students are those who have been awarded a Navy ROTC scholarship, which covers tuition, fees, and other expenses. These students are selected based on their academic excellence, leadership potential, and commitment to service. Scholarship Students receive rigorous training and education to prepare them for commissioning as naval officers. They are expected to maintain high standards of performance and are provided with resources and support to excel in their studies and ROTC activities. Through their dedication and hard work, Scholarship Students exemplify the values and mission of the Navy ROTC program.</p> 
+            <ul>
+              <li>Tuition Coverage & Stipened</li>
+              <li>Summer Training</li>
+              <li>Leadership Experience</li>
+            </ul>
+            <a href="https://www.subr.edu/page/scholarship"><!-- Input correct link to website -->
+              <button class="button button2">Apply</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.subr.edu/page/scholarship"><!-- Input correct link to website -->
+        <button class="button button1">View More Opportunities</button>
+      </a>
+  </div>
+</body>
+<br>
+<br>
+<!-- Cross Town Affiliated Schools -->
+<body>
+<div class="container2">
+  <h2 style="color: black">Cross Town Affiliated Schools</h2>
+  <div class="logo-container2">
+    <a href="https://www.subr.edu" target="_blank">
+      <img src="/assets/subr/NavyROTC/SU_Better_Logo.png" alt="Southern University Logo">
+    </a>
+    <a href="https://www.lsu.edu" target="_blank">
+      <img src="/assets/subr/NavyROTC/LSU_Logo.png" alt="Louisiana State University Logo">
+    </a>
+    <a href="https://www.southeastern.edu" target="_blank">
+      <img src="/assets/subr/NavyROTC/SELU_Logo.png" alt="Southeastern Louisiana University Logo">
+    </a>
+    <a href="https://www.mybrcc.edu" target="_blank">
+      <img src="/assets/subr/NavyROTC/BRCC_Logo.png" alt="Baton Rouge Community College Logo">
+    </a>
+  </div>
+</div>
+</body>
+<br>
+<br>
+<br>
+<!-- Section social media-->
+<body>
+    <div class="social-media">
+        <!-- TODO add instagram,reformat instagram, facebook(maybe), and 2 latest newsletters.-->
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/redstickbattalion/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/redstickbattalion/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/redstickbattalion/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">SU NROTC</a> (@<a href="https://www.instagram.com/redstickbattalion/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">redstickbattalion</a>) • Instagram photos and videos</p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+      <br>
+
+      <a href="https://www.subr.edu/page/621">
+        <button class="button button1">News and Events</button>
+      </a>
+
+
+  </div>
+</body>
+
+
+<!-- Contact us section -->
+
+<body class="body2">
+  <div class="container3">
+      <h2>Contact Us</h2>
+      <div class="container5">
+        <div class="card5">
+          <div class="card-content5">
+            <h2><i class="fa-solid fa-envelope"></i></h2> 
+            <p>NROTCU Southern University and A&M College</p>
+            <p>Bldg 18 McNair Hall</p>
+            <p>Leon Netterville Dr</p>
+            <p>Baton Rouge, LA 70813</p>
+               
+
+          </div>
+        </div>
+        <div class="card5">
+          <div class="card-content5">
+            <h2><i class="fa-solid fa-phone"></i></h2> 
+            <p>Phone: (225) 771-3646 </p>
+            <p>Fax: (225) 774-3604</p> 
+            <p>E-mail: <a href="mailto:sunrotc@subr.edu">sunrotc@subr.edu</a></p>
+            <p>Have suggestions for improvements to our website? Contact our<a href="mailto:peter.carver@sus.edu"> webmaster</a></p>
+              
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+
+
+<!-- Hypertext Links  -->
+
+<body>
+  <div class="link-container"> 
+    <a href="http://www.navy.com" target="_blank">  <!-- NAVY.com -->
+      <button class="button button3">Navy.com</button>
+    </a>
+
+    <a href="http://www.navy.mil" target="_blank"><!-- NAVY.mil -->
+      <button class="button button3">Navy.mil</button>
+    </a>
+
+    <a href="http://www.marines.com" target="_blank"><!-- Marines.com -->
+      <button class="button button3">Marines.com</button>
+    </a>
+
+    <a href="http://www.marines.mil" target="_blank"><!-- Marines.mil -->
+      <button class="button button3">Marines.mil</button>
+    </a>
+
+    <a href="/assets/subr/NavyROTC/ICONS/PrivacyPolicy.pdf" target="_blank"><!-- Privacy Policy -->
+      <button class="button button3">Privacy Policy</button>
+    </a>
+
+    <a href="http://www.netc.navy.mil/nstc/" target="_blank"><!-- NSTC -->
+      <button class="button button3">NSTC</button>
+    </a>
+
+    <a href="http://www.veteranscrisisline.net/" target="_blank"><!-- FOIA -->
+      <button class="button button3">FOIA</button>
+    </a>
+
+    <a href="https://www.navy.mil/Resources/Frequently-Asked-Questions/" target="_blank"><!-- NAVY FAQ -->
+      <button class="button button3">Navy FAQ</button>
+    </a>
+  </div>
+</body>
+
+<div class="centering"><a href="http://www.veteranscrisisline.net/"><img src="/assets/subr/NavyROTC/SuicideHotlineIcon.jpg"></a></div>
+
+
+
+
+<!-- !!!!!!  Get rid of this below !!!!!!!!!!!-->
+
+
+<!-- Working on getting rid of table format to have more liberty to edit HTML Source--> 
+<!--Table does not wrap with size of window.-->
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>

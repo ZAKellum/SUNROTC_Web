@@ -1,0 +1,244 @@
+<style>
+
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+    /*
+    h1, h2, h3, h4 {
+        color: #333;
+    }
+    */
+    .year-section {
+        margin-bottom: 2rem;
+        text-decoration: none;
+    }
+
+    #newsletters {
+        max-width: 600px;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+
+    .newsletter-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-decoration: none;
+    }
+
+    .newsletter-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Ensure space between content and thumbnail */
+        text-decoration: none; /* Remove underline from links */
+        color: inherit; /* Inherit color from parent */
+        padding: 1rem; /* Add padding for better spacing */
+        Height: 200px
+    }
+
+    .newsletter-card:hover {
+        transform: translateY(-5px);
+        
+    }
+
+    .newsletter-card {
+        padding: 1.5rem;
+        flex: 1;
+    }
+
+    .newsletter-card h4 {
+        margin-top: 0;
+        color: #007BFF;
+    }
+
+    .newsletter-card p {
+        margin: 0.5rem 0;
+        color: #555;
+    }
+
+    .newsletter-content {
+        flex: 1; /* Allow content to take up remaining space */
+        padding-right: 1rem;
+    }
+
+    .newsletter-thumbnail {
+        width: 120px; /* Adjust size as needed */
+        height: 120px; /* Adjust size as needed */
+        border-radius: 5px;
+        flex-shrink: 0; /* Prevent the image from shrinking */
+        margin-left: 1rem;
+        object-fit: cover;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        background-color: #007BFF;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    #viewMoreBtn {
+        display: block;
+        margin: 1.5rem auto 0;
+        cursor: pointer;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .gallery img {
+        width: 30%;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        transition: transform 0.2s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    
+    a.newsletter-card {
+    text-decoration: none;
+    color: inherit; 
+    }
+
+    a.newsletter-card:hover {
+        text-decoration: none;
+    }
+
+    a.newsletter-card h4, a.newsletter-card p {
+        text-decoration: none;
+    }
+
+</style>
+
+<body>
+    <section id="newsletters">
+        <h2>Newsletters</h2>
+        <div class="year-section">
+            <h3>2022</h3>
+            <div class="newsletter-list">
+                <a href="/assets/subr/NavyROTC/PAOarticles/SP22-Newsletter-Final.pdf" target="_blank" class="newsletter-card">               
+                    <div class="newsletter-content">
+                        <h4>Newsletter Spring 2024</h4>
+                        <p>Catch up on all the latest news and events from Spring 2024.</p>
+                    </div>
+                    <img src="/assets/subr/NavyROTC/Sp_22_Thumbnail.JPG" alt="Spring 2024" class="newsletter-thumbnail">
+                </a>
+            </div>
+        </div>
+        <div class="year-section">
+            <h3>2021</h3>
+            <div class="newsletter-list">
+                <a href="/assets/subr/NavyROTC/PAOarticles/SP22-Newsletter-Final.pdf" target="_blank" class="newsletter-card">               
+                    <div class="newsletter-content">
+                        <h4>Newsletter Fall 2021</h4>
+                        <p>From Commissioning, to MWRs, to MCMAP</p>
+                    </div>
+                    <img src="/assets/subr/NavyROTC/Fl_21_Thumbnail2.JPG" alt="Spring 2024" class="newsletter-thumbnail">
+                </a>
+            </div>
+        </div>
+        <button id="viewMoreBtn" class="btn">View More</button>
+    </section>
+</body>
+
+
+
+
+
+<!--
+****************
+
+OLD HTML CODE
+
+****************
+-->
+<h3><strong>Navy and Marine Corps</strong></h3>
+<table style="width: 523px;">
+<tbody>
+<tr>
+<td style="width: 205.062px;">
+<ul>
+<li><a href="https://www.navy.mil/">Navy.mil</a></li>
+<li><a href="https://www.navytimes.com/">Navy Times</a></li>
+</ul>
+</td>
+<td style="width: 309.938px;">
+<ul>
+<li><a href="https://www.marines.mil/News/">Marines.mil</a></li>
+<li><a href="https://www.marinecorpstimes.com/">Marine Corps Times</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3><strong>Battalion Newsletters</strong></h3>
+<ul>
+<li>
+<p><a title="Spring 2022 Newsletter" href="/assets/subr/NavyROTC/PAOarticles/SP22-Newsletter-Final.pdf">Spring 2022 Newsletter</a></p>
+</li>
+<li>
+<p><a href="/assets/subr/NavyROTC/PAOarticles/FL21-Redstick-Newsletter.pdf">Fall 2021 Newsletter</a></p>
+</li>
+<li>
+<p><a title="Redstick Review Spring 2019 Newsletter, 1st Edition " href="/assets/subr/NavyROTC/Spring-2019-Redstick-Review-1st-Edition.pdf">Spring 2019 Newsletter, 1st Edition </a></p>
+</li>
+<li>
+<p><a href="/assets/subr/NavyROTC/Fall-2018-Redstick-Review-2nd-Edition.pdf">Fall 2018 Newsletter, 2nd Edition</a></p>
+</li>
+<li>
+<p><a href="/assets/subr/NavyROTC/Fall-2018-Redstick-Review-1st-Edition.pdf">Fall 2018 Newsletter, 1st Edition</a></p>
+</li>
+<li>
+<p><a href="/assets/subr/NavyROTC/MarineOptionNewsletterSP2017.pdf">Spring 2017 Newsletter</a></p>
+</li>
+<li>
+<p><a href="/assets/subr/NavyROTC/SUNROTCNewsletterSP2016APPROVEDVERSION.DOCX">Spring 2016 Newsletter</a></p>
+</li>
+<li>
+<p><a title="Spring 2016 Newsletter" href="/assets/subr/NavyROTC/SUNROTCNewsletterSP2016APPROVEDVERSION.DOCX">OCT 2015 Southern University NROTC Visited by Alumnus General Officer</a></p>
+</li>
+<li>
+<p><a href="/assets/subr/NavyROTC/PAOarticles/LSUSalutes2014.pdf">NOV 2014 NROTC Southern University Participates in LSU Salutes</a></p>
+</li>
+<li>
+<p><a href="/assets/subr/NavyROTC/PAOarticles/BayouClassicMotivationalRun2014.pdf">NOV 2014 NROTC Southern University Achieves Record Time in Annual Bayou Classic Run</a>&nbsp;</p>
+</li>
+</ul>
+<h3><strong>Program Opportunities</strong></h3>
+<ul>
+<li>
+<p><a href="/assets/subr/NavyROTC/PAOarticles/NROTC-Digital-Brochure.pdf">Digital Brochure</a></p>
+</li>
+<li>
+<p><a href="/assets/subr/NavyROTC/PAOarticles/NROTC-Scholarship-Flyer.pdf">Scholarship Flyer</a></p>
+</li>
+<li>
+<p><a href="/assets/subr/NavyROTC/PAOarticles/MIDN-EXPOSE-PROGRAM.pdf">2021 MIDN Expose Program</a></p>
+</li>
+</ul>
+<p><a href="/assets/subr/NavyROTC/PAOarticles/2014DronetChallengeArticle.pdf">&nbsp;</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
